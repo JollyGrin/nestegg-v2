@@ -9,6 +9,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "jquery": "^3.2.1",
+    "lity": "^2.3.0",
     "typed.js": "^2.0.6"
   }
 }
