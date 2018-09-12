@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blog - Free Bulma template</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <!-- Bulma Version 0.7.1-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/blog.css">
+
+    <style type="text/css">
+        .hero-body {
+        background-image: url(assets/images/hero/solar2.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 500px;
+        }
+        .articles {
+          margin: 5rem 0;
+          margin-top: -200px;
+        }
+        .articles .content p {
+            line-height: 1.9;
+            margin: 15px 0;
+        }
+        .author-image {
+            position: absolute;
+            top: -30px;
+            left: 50%;
+            width: 60px;
+            height: 60px;
+            margin-left: -30px;
+            border: 3px solid #ccc;
+            border-radius: 50%;
+        }
+        .media-center {
+          display: block;
+          margin-bottom: 1rem;
+        }
+        .media-content {
+          margin-top: 3rem;
+        }
+        .article, .promo-block {
+          margin-top: 6rem;
+        }
+        div.column.is-8:first-child {
+          padding-top: 0;
+          margin-top: 0;
+        }
+        .article-title {
+          font-size: 2rem;
+          font-weight: lighter;
+          line-height: 2;
+        }
+        .article-subtitle {
+          color: #909AA0;
+          margin-bottom: 3rem;
+        }
+        .article-body {
+          line-height: 1.4;
+          margin: 0 6rem;
+        }
+        .promo-block .container {
+          margin: 1rem 5rem;
+        }
+        
+        /*DISPLAY NONE*/
+        .hide {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- START NAV -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="../">
+                        <img src="../images/bulma.png" alt="Logo">
+                    </a>
+                <span class="navbar-burger burger" data-target="navbarMenu">
+                        <span></span>
+                <span></span>
+                <span></span>
+                </span>
+            </div>
+            <div id="navbarMenu" class="navbar-menu">
+                
+            </div>
+        </div>
+    </nav>
+    <!-- END NAV -->
+
+    <section class="hero is-info is-medium is-bold">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <h1 class="title is-1" style="margin-top: 3rem">NestEgg Solar Share</h1><h1 class="title is-3">Waiting List Deposit</h1>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="container">
+        <!-- START ARTICLE FEED -->
+        <section class="articles">
+            <div class="column is-8 is-offset-2">
+                <!-- START ARTICLE -->
+                <div class="card article">
+                    <div class="card-content">
+                        
+
+                        <!-- Success -->
+                        <div>
+                            <div class="media">
+                                <div class="media-content has-text-centered">
+                                    <img src="https://openclipart.org/download/257462/Checkmark.svg" style="height: 100px;">
+                                    <p class="title article-title"> <b>Deposit Success</b></p>
+                                </div>
+                            </div>
+                            <div class="content article-body">
+                                <p>
+                                    Welcome aboard! We're thrilled that you want to be part of our first pilots.
+                                </p>
+                                <p>
+                                    Right now we're working on the finishing touches of the IoT devices that track energy production. We'll be rolling out installations in batches and will be giving updates along the way. 
+                                    <br><br>
+                                    Get in touch via nestegg.eu and chat with us on social.
+                                </p>
+                                <center>
+                                    <a href="http://nestegg.eu/solar" class="button is-primary is-large">Return to Solar Share</a>
+                                </center>
+                            </div>
+                        </div>
+                        <!-- // Success -->
+
+                        <!-- Checking -->
+                        <div class="hide">
+                            <div class="media">
+                                <div class="media-content has-text-centered">
+                                    <img src="https://banner2.kisspng.com/20180211/kvw/kisspng-hourglass-time-google-search-website-u041fu0440u04-hourglass-vector-5a7fe48063e036.5160600715183310084091.jpg" style="height: 100px;">
+                                    <p class="title article-title"> <b>Checking Payment</b></p>
+                                </div>
+                            </div>
+                            <div class="content article-body">
+                                <p>
+                                    We're awaiting your payment. 
+                                </p>
+                                <p>
+                                    No worries, this might take a few seconds. ⏳
+                                </p>
+                            <center>
+                                <a href="http://nestegg.eu/solar" class="button is-primary is-large">Return to Solar Share</a>
+                            </center>
+                            </div>
+                        </div>
+                        <!-- // Checking -->
+
+                        <!-- Failure -->
+                        <div class="hide">
+                            <div class="media">
+                                <div class="media-content has-text-centered">
+                                    <img src="https://thewindowsclub-thewindowsclubco.netdna-ssl.com/wp-content/uploads/2016/04/windows-update-error.png" style="height: 100px;">
+                                    <p class="title article-title"> <b>Something went wrong</b></p>
+                                </div>
+                            </div>
+                            <div class="content article-body">
+                                <p>
+                                    Hmm 🤔 Your deposit didn't go through.
+                                </p>
+                                <p>
+                                    You are free to try again or contact info@nestegg.eu. We're happy to help!
+                                </p>
+                            <center>
+                                <a href="http://nestegg.eu/solar" class="button is-primary is-large">Return to Solar Share</a>
+                            </center>
+                            </div>
+                        </div>
+                        <!-- // Failure -->
+
+                    </div>
+                </div>
+                <!-- END ARTICLE -->
+        </section>
+        <!-- END ARTICLE FEED -->
+        </div>
+        <script async type="text/javascript" src="../js/bulma.js"></script>
+</body>
+
+</html>
