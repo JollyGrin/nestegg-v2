@@ -69,12 +69,7 @@
         .promo-block .container {
             margin: 1rem 5rem;
         }
-        #success {
-            display: none;
-        }
-        #failure {
-            display: none;
-        }
+
 
         /*DISPLAY NONE*/
         .hide {
@@ -117,13 +112,13 @@ let interval = setInterval(function () {
       console.log('resdata',response.data)
       if (response.data === 'paid') {
         clearInterval(interval)
-        document.getElementById('checking').style.display = 'none'
-        document.getElementById('success').style.display = null
+        document.getElementById('checking').classList.add('hide')
+        document.getElementById('success').classList.remove('hide')
       }
       else if (response.data !== 'open') {
         clearInterval(interval)
-        document.getElementById('checking').style.display = 'none'
-        document.getElementById('failure').style.display = null
+        document.getElementById('checking').classList.add('hide')
+        document.getElementById('failure').classList.remove('hide')
       }
 
     }).catch(console.log)
@@ -170,7 +165,7 @@ let interval = setInterval(function () {
 
 
                     <!-- Success -->
-                    <div class="" id="success">
+                    <div class="hide" id="success">
                         <div class="media">
                             <div class="media-content has-text-centered">
                                 <img src="https://openclipart.org/download/257462/Checkmark.svg" style="height: 100px;">
@@ -216,7 +211,7 @@ let interval = setInterval(function () {
                     <!-- // Checking -->
 
                     <!-- Failure -->
-                    <div class="" id="failure">
+                    <div class="hide" id="failure">
                         <div class="media">
                             <div class="media-content has-text-centered">
                                 <img src="https://thewindowsclub-thewindowsclubco.netdna-ssl.com/wp-content/uploads/2016/04/windows-update-error.png" style="height: 100px;">
@@ -240,7 +235,7 @@ let interval = setInterval(function () {
                 </div>
             </div>
         </div>
-            <!-- END ARTICLE -->
+        <!-- END ARTICLE -->
     </section>
     <!-- END ARTICLE FEED -->
 </div>
