@@ -891,7 +891,22 @@
             p = i(d),
             h = n(9),
             v = i(h);
-        // window.$ = o.default, window.$ = t, window.isMobile = /mobile|tablet/i.test(navigator.userAgent), t(document).ready(function() { a.default.init(), u.default.init(), f.default.init(), p.default.init(), v.default.init() }), window.cookieconsent.initialise({ content: { message: "We use cookies to ensure you get the best experience on our website.", dismiss: "Gotcha!", link: "Our privacy policy", href: "/privacy" }, elements: { dismiss: '\n      <a aria-label="dismiss cookie message" tabindex="0" class="cc-btn cc-dismiss button is-warning">🍪 {{dismiss}}</a>', messagelink: '\n      <div class="content">\n        <p id="cookieconsent:desc" class="cc-message">\n          {{message}}\n          <br />\n          <a aria-label="learn more about cookies" tabindex="0" href="{{href}}" target="_blank">{{link}}</a>.\n        </p>\n      </div>' } }) }).call(t, n(0), n(0)) }, function(e, t, n) {
+        window.$ = o.default, window.$ = t, window.isMobile = /mobile|tablet/i.test(navigator.userAgent), t(document).ready(function() { a.default.init(), u.default.init(), f.default.init(), p.default.init(), v.default.init() }), 
+        
+
+        window.cookieconsent.initialise(
+            // { content: 
+            //     { message: "We use cookies to ensure you get the best experience on our website.", 
+            //     dismiss: "Gotcha!", 
+            //     link: "Our privacy policy", 
+            //     href: "https://my.nestegg.eu/privacy" 
+            //         }, 
+            // elements: 
+            //     { dismiss: '\n      <a aria-label="dismiss cookie message" tabindex="0" class="cc-btn cc-dismiss button is-warning">🍪 {{dismiss}}</a>', 
+            //     messagelink: '\n      <div class="content">\n        <p id="cookieconsent:desc" class="cc-message">\n          {{message}}\n          <br />\n          <a aria-label="learn more about cookies" tabindex="0" href="{{href}}" target="_blank">{{link}}</a>.\n        </p>\n      </div>' 
+            //         }
+            //     }
+             ) }).call(t, n(0), n(0)) }, function(e, t, n) {
     function i(e) { return null == e ? void 0 === e ? l : a : u && u in Object(e) ? o(e) : s(e) } var r = n(2),
         o = n(14),
         s = n(15),
