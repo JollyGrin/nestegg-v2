@@ -100,8 +100,9 @@ function signUp() {
   return axios.post('https://kpe410xytc.execute-api.eu-central-1.amazonaws.com/production/payments/signUp',{name, email, location,
     text, energy, deposit})
     .then(data => {
-      if(!data.redirectUrl) window.location.replace("https://nestegg.eu?success=true")
-      else window.location.replace(data.redirectUrl)
+	  console.log('datahhere', data.data)
+      if(!data.data.redirectUrl) window.location.replace("https://nestegg.eu?success=true")
+      else window.location.replace(data.data.redirectUrl)
     })
 }
 
