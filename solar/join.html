@@ -100,9 +100,8 @@ function signUp() {
   return axios.post('https://kpe410xytc.execute-api.eu-central-1.amazonaws.com/production/payments/signUp',{name, email, location,
     text, energy, deposit})
     .then(data => {
-	  console.log('datahhere', data.data)
-      if(!data.data.redirectUrl) window.location.replace("https://nestegg.eu?success=true")
-      else window.location.replace(data.data.redirectUrl)
+      if(!data.data.paymentUrl) window.location.replace("https://nestegg.eu?success=true")
+      else window.location.replace(data.data.paymentUrl)
     })
 }
 
@@ -217,9 +216,9 @@ function signUp() {
 
                         <!-- Long Text -->
                         <div class="field">
-                            <label class="label" id="text-input">Why are you excited about Solar Share?</label>
+                            <label class="label">Why are you excited about Solar Share?</label>
                             <div class="control">
-                                <textarea class="textarea"></textarea>
+                                <textarea class="textarea" id="text-input"></textarea>
                             </div>
                         </div><br>
 
