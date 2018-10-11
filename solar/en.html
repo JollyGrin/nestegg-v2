@@ -57,11 +57,12 @@ function signUp() {
   const terms = document.getElementById('terms-checkbox').checked
   if (!terms) return alert('You must agree to the terms and conditions before reserving.')
 
+  let ref = window.location.href.split('ref=')[1] || 'No Ref'
   let name = document.getElementById('full-name-input').value
   let email = document.getElementById('email-input').value
   let location = document.getElementById('postalcode').value
   let text = document.getElementById('text-input').value
-  let energy = document.getElementById('energy-input').value
+  let energy = document.getElementById('energy-input').value + ' ' + ref
   let deposit = true
   if (!email || !name || !location) return alert('Please check that your name, email, and location are filled in.')
   return axios.post('https://kpe410xytc.execute-api.eu-central-1.amazonaws.com/production/payments/signUp',{name, email, location,
@@ -396,7 +397,7 @@ function signUp() {
                                         </div>
                                     </div>
 
-                                    
+
                                     <!-- Submit -->
                                     <div class="field is-grouped">
                                         <div class="control">
