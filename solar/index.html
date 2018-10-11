@@ -339,7 +339,7 @@ function signUp() {
                                     <hr>
                                     <!-- Short Text -->
                                     <div class="field">
-                                        <label class="label">Voor- en achternaam</label>
+                                        <label class="label">Voor- en achternaam <span style="color: red;">*</span></label>
                                         <div class="control">
                                             <input class="input" type="text" placeholder="Nathalie Drost" id="full-name-input">
                                         </div>
@@ -347,7 +347,7 @@ function signUp() {
 
                                     <!-- Short Text -->
                                     <div class="field">
-                                        <label class="label" >E-mailadres</label>
+                                        <label class="label" >E-mailadres <span style="color: red;">*</span></label>
                                         <div class="control">
                                             <input class="input" type="text" placeholder="nathalie@nestegg.eu" id="email-input">
                                         </div>
@@ -355,7 +355,7 @@ function signUp() {
 
                                     <!-- PCR Input -->
                                     <div class="field">
-                                        <label class="label" >Jouwe Postcode</label>
+                                        <label class="label" >Jouwe Postcode <span style="color: red;">*</span></label>
                                         <div class="control">
                                             <input class="input" type="text" placeholder="6411CR" id="postalcode">
                                         </div>
@@ -402,8 +402,8 @@ function signUp() {
                                         <div class="control">
                                             <label class="checkbox">
                                                 <input type="checkbox" id="terms-checkbox">
-                                                <span style="color: red">*verplicht veld:</span>
-                                                Ik ga akkoord met de <a href="https://my.nestegg.eu/terms-and-condtions" target="_blank">algemene voorwaarden</a>
+                                                
+                                                Ik ga akkoord met de <a href="https://my.nestegg.eu/terms-and-condtions" target="_blank">algemene voorwaarden</a> <span style="color: red;">*</span>
                                             </label>
                                         </div>
                                     </div>
@@ -417,6 +417,7 @@ function signUp() {
                                             <button class="button is-text" onClick="window.location.replace('https://nestegg.eu/solar')">Cancel</button>
                                         </div> -->
                                     </div>
+                                    <span style="color: red; float: right;">*Verplicht Veld:</span>
 
                                 </div>
                             </div>
