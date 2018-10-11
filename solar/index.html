@@ -60,11 +60,12 @@ function signUp() {
   const terms = document.getElementById('terms-checkbox').checked
   if (!terms) return alert('Voor de reservering vragen we u akkoord te gaan met de algemene voorwaarden.')
 
+  let ref = window.location.href.split('ref=')[1] || 'No Ref'
   let name = document.getElementById('full-name-input').value
   let email = document.getElementById('email-input').value
   let location = document.getElementById('postalcode').value
   let text = document.getElementById('text-input').value
-  let energy = document.getElementById('energy-input').value
+  let energy = document.getElementById('energy-input').value + ' ' + ref
   let deposit = true
   if (!email || !name || !location) return alert('Zijn uw email, naam en locatiegegevens correct ingevuld?')
   return axios.post('https://kpe410xytc.execute-api.eu-central-1.amazonaws.com/production/payments/signUp',{name, email, location,
@@ -402,7 +403,7 @@ function signUp() {
                                         <div class="control">
                                             <label class="checkbox">
                                                 <input type="checkbox" id="terms-checkbox">
-                                                
+
                                                 Ik ga akkoord met de <a href="https://my.nestegg.eu/terms-and-condtions" target="_blank">algemene voorwaarden</a> <span style="color: red;">*</span>
                                             </label>
                                         </div>
